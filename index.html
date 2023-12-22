@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" media="all">
+    <link rel="stylesheet" href="styles/screens.css" media="screen">
+    <link rel="stylesheet" href="styles/print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Tela de login</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Logo</h1>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <img src="" alt="">
+        </section>
+
+        <section>
+
+            <h2>Bem-vindo!</h2>
+
+            <form action="authentication.php" method="post" autocomplete="on">
+                <div class="authentication-information" style="display: ;">
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" name="username" id="username" spellcheck="false" minlength="8" maxlength="30" required>
+                </div>
+                <div class="authentication-information">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" spellcheck="false" minlength="8" maxlength="30" required>
+                </div>
+                <div class="authentication-information">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" minlength="8" maxlength="30" required>
+                </div>
+                <div class="authentication-information" style="display: ;">
+                    <label for="password">Confirme sua senha</label>
+                    <input type="password" name="password" id="password" minlength="8" maxlength="30" required>
+                </div>
+                <div>
+                    <input type="submit" id="submit" value="Entrar">
+                </div>
+                <div id="choice-box">
+                    <div>
+                        <input type="checkbox" name="to-keep-nav" class="checkbox" id="to-keep-nav">
+                        <label for="to-keep-nav"><span></span>Manter conectado neste navegador.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="to-receive-email" class="checkbox" id="to-receive-email">
+                        <label for="to-receive-email"><span></span>Receber atualizações no e-mail.</label>
+                    </div>
+                </div>
+            </form>
+
+            <div id="help-options">
+                <p>
+                    <a href="#">Esqueceu a senha?</a>
+                </p>
+                <p>
+                    <a href="#">Criar uma Conta.</a>
+                </p>
+            </div>
+
+            <div id="connection-options">
+                <div>
+                    <hr>
+                    <p>Conecte atráves</p>
+                    <hr>
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="medias/images/icons8-google-logo.svg" alt="Entrar atráves do Google." width="60px"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="medias/images/icons8-facebook.svg" alt="Entrar atráves do Facebook." width="70px"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="medias/images/icons8-twitter.svg" alt="Entrar atráves do T." width="60px"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+
+</body>
+
+</html>

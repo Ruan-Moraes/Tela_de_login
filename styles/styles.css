@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-bg: #262626;
+    --color-hr: #404040;
+    --color-01: #d44179;
+    --color-02: #F24B8B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: normal;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 2px;
+}
+
+header i {
+    font-size: 2rem;
+    color: white;
+}
+
+header hr {
+    width: calc(100% + 2rem);
+    border-bottom: 2px solid var(--color-hr);
+}
+
+main {padding: 0 1rem;}
+
+section:nth-child(1) {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.authentication-information {
+    position: relative;
+    height: 2.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.authentication-information > input {
+    width: 100%;
+    height: 100%;
+    padding: 0 .5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    color: white;
+    transition: .3s;
+}
+
+.authentication-information > input:focus {
+    border: 1px solid var(--color-01);
+}
+
+.authentication-information > label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    padding: 0 .4rem;
+    background-color: var(--color-bg);
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 2.8rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-01);
+    box-shadow: 0px 0px 6px black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: .3s;
+}
+
+input[type=submit]:hover {background-color: var(--color-02);}
+
+#choice-box div {margin-bottom: .5rem;}
+
+#choice-box label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3rem;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox+label span {
+    width: 1.5rem;
+    height: 1.35rem;
+    user-select: none;
+}
+
+.checkbox+label span::before,
+.checkbox+label span::after {
+    position: absolute;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: transparent;
+    border: 2px solid var(--color-01);
+    content: "";
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkbox+label span::after {border: none;}
+
+.checkbox:checked+label span::before {
+    background-color: var(--color-01);
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+#help-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+a {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--color-01);  
+}
+
+#connection-options > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#connection-options p {
+    width: 40%;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 0px black;
+}
+
+#connection-options hr {
+    width: 30%;
+    border: 1px solid var(--color-hr);
+}
+
+#connection-options > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
